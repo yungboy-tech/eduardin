@@ -1,0 +1,382 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* MENU */
+
+.flex-container{
+    background-color: #000000;
+    width: 100%;
+    padding: 0px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-nav{
+    display: flex;
+}
+
+
+.menu-nav a{
+    text-decoration: none;
+    color: #00b8fb;
+    font-size: 18px;
+    padding: 23px;
+    text-align: center;
+}
+
+.menu-nav a:hover{
+    background-color: whitesmoke;
+}
+
+/* CAPA */
+
+.capa{
+    background-image: url(../img/sea-bg1.jpg);
+    min-height: 100vh;
+    background-size: cover;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.capa h1{
+    font-size: 70px;
+    max-width: 500px;
+    text-shadow: 3px 3px #000000;
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.capa h2{
+    max-width: 500px;
+    font-size: 30px;
+    margin-top: 0;
+    border-top: 1px solid #ffffff;
+}
+
+.capa .botao{
+    border: 1px solid #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.capa .botao:hover{
+    background-color: aqua;
+    border: 0px;
+}
+
+/* PROJETO */
+.projeto{
+    display: flex;
+    width: 100%;
+    padding: 30px 0px 20px 0px;
+
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+
+    flex-wrap: wrap;
+}
+
+.sobre-projeto{
+    flex: 50%;
+    padding: 0px 50px;
+}
+
+.sobre-projeto h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+.sobre-projeto p{
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.video{
+    flex: 50%;
+    padding: 0px 50px;
+}
+
+.video iframe{
+    width: 100%;
+
+}
+
+/* SELEÇÃO */
+
+.t-selecao{
+ text-align: center;
+}
+
+.selecao{
+    display: flex;
+    max-width: 100%;
+    padding: 30px 0px 20px 0px;
+    flex-wrap: wrap;
+}
+
+.card{
+    flex: 25%;
+    text-align: center;
+    padding: 0px 3px;
+    box-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.3);
+}
+.img-selecao{
+    height: 85px;
+    width: 85px;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 50%;
+}
+
+.img-selecao img{
+    max-width: 60%;
+    margin: 15px;
+}
+    
+
+.img-selecao:hover{
+    background-color: lightblue ;
+}
+
+/* ECOPONTOS */
+
+.ecopontos{
+    max-width: 100%;
+    background-color: #f7f7f7;
+    padding: 30px 0px 20px 0px;
+}
+
+.ecopontos h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.ecopontos h2{
+    text-align: center;
+    font-size: 16px;
+}
+
+.container-cards{
+    max-width: 100%;
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.card-ecopontos{
+    max-width: 400px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 2px 7px 8px #777777;
+
+    flex: 30%;
+}
+
+.card-ecopontos img{
+    max-width: 100%;
+    height: 350px;
+}
+
+/* SOBRE MIM */
+
+.sobre{
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px 20px 0px;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.sobremim{
+    flex: 50%;
+    padding: 0px 40px;
+}
+
+.sobremim h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.sobremim h2{
+text-align: center;
+}
+
+.sobremim p{
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.foto{
+    flex: 50%;
+    padding: 0px 40px;
+}
+
+.foto img{
+    max-width: 100%;
+}
+
+/* RODAPE */
+
+footer{
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px 50px 0px;
+    background-color: #01acea;
+    color: #ffffff;
+}
+
+.creditos{
+    flex: 50%;
+    padding: 0px 40px;
+}
+
+.creditos h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.creditos p{
+    text-align: justify;
+    line-height: 1.6;
+}
+
+
+
+/* --------RESPONSIVIDADE--------- */
+
+@media (max-width: 760px){
+
+/* HEADER */
+.flex-container{
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    ppdisplay: none;
+}
+
+/*
+.menu-nav{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #1d1d1d;
+    ppdisplay: none;
+}
+
+.menu-nav a{
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+}
+*/
+
+
+
+.menu-nav{
+    padding: 5px 1px;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 9px;
+    letter-spacing: 1px;
+    background-color: #0e3e6b;
+}
+
+.menu-nav a{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    color: #ffffff;
+}
+
+
+.capa{
+    min-height: 90vh;
+}
+
+.capa h1{
+    font-size: 50px;
+    max-width: 100%;
+    margin-bottom: 0px;
+    text-shadow: 3px 3px 2px #000000;
+}
+
+.capa h2{
+    max-width: 100%;
+    font-size: 20px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.projeto{
+    flex-direction: column;
+}
+
+.sobre-projeto{
+    padding: 20px;
+}
+
+.video{
+    flex: 1;
+    padding: 0px 5px;
+    width: 100%;
+}
+
+.video iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.selecao{
+    flex-direction: column;
+}
+
+.container-cards{
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre{
+    flex-direction: column;
+}
+
+.sobremim{
+    padding: 0px 5px;
+}
+
+.foto{
+    padding: 0px 5px;
+}
+
+footer{
+    flex-direction: column;
+}
+
+}
